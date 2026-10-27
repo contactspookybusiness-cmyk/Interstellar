@@ -48,14 +48,9 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && store.get("ab") === 
 const SplashT = [
   "Over 8 Million Users since 2023",
   "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
+  "Made by udontknowmefr",
   "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
   "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -100,24 +95,10 @@ function randRange(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
+
 (function buildHeading() {
   const heading = document.querySelector("h1.title");
   if (!heading) return;
-  const codes = [73, 110, 116, 101, 114, 115, 116, 101, 108, 108, 97, 114];
-  const twins = { 116: "т", 101: "е", 115: "ѕ", 97: "а", 73: "І" };
-  const invisible = ["​", "‌", "‍", "⁠"];
-  const wrappers = ["span", "x-a", "x-b", "ab-x", "s-p", "n-a"];
-  const rand = n => Math.floor(Math.random() * n);
-  const frag = document.createDocumentFragment();
-  for (let i = 0; i < codes.length; ) {
-    const size = 1 + rand(3);
-    let piece = "";
-    for (const code of codes.slice(i, i + size)) piece += twins[code] && Math.random() < 0.4 ? twins[code] : String.fromCharCode(code);
-    i += size;
-    const node = document.createElement(wrappers[rand(wrappers.length)]);
-    node.textContent = piece;
-    frag.appendChild(node);
-    if (i < codes.length) frag.appendChild(document.createTextNode(invisible[rand(invisible.length)]));
-  }
-  heading.replaceChildren(frag);
+
+  heading.textContent = "ORBIT";
 })();

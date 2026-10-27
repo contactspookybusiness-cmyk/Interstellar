@@ -32,10 +32,10 @@ const addressBar = (() => {
   let addressEditing = false;
 
   const INTERNAL_PAGES = {
-    home: { route: "/home", title: "New Tab", displayUrl: "interstellar://newtab" },
-    apps: { route: "/apps", title: "Apps", displayUrl: "interstellar://apps" },
-    games: { route: "/games", title: "Games", displayUrl: "interstellar://games" },
-    settings: { route: "/settings", title: "Settings", displayUrl: "interstellar://settings" },
+    home: { route: "/home", title: "New Tab", displayUrl: "orbit://newtab" },
+    apps: { route: "/apps", title: "Apps", displayUrl: "orbit://apps" },
+    games: { route: "/games", title: "Games", displayUrl: "orbit://games" },
+    settings: { route: "/settings", title: "Settings", displayUrl: "orbit://settings" },
   };
 
   function internalPageForUrl(href) {
